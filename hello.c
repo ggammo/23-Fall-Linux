@@ -1,6 +1,6 @@
-#include <stdio.h>
+#include<stdio.h>
 int main(){
-	printf("hello.c");
-	printf("Linux");
+	printf("hello");
 	return 0;
 }
+
