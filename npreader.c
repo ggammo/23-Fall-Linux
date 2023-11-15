@@ -2,10 +2,10 @@
 #include <sys/types.h>
 #include <sys/stat.h>
 #include <fcntl.h>
-#include<stdlib.h>
+#include<unistd.h>
 #define MAXLINE 100
 
-int main( ) {
+int main() {
 	int fd;
 	char str[MAXLINE];
 	unlink("myPipe");
@@ -16,6 +16,7 @@ int main( ) {
 	close(fd);
 	return 0;
 } 
+
 int readLine(int fd, char *str)
 { 
 	int n;
