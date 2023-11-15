@@ -5,6 +5,7 @@
 #include<unistd.h>
 #define MAXLINE 100
 
+int readLine(int fd, char *str);
 int main() {
 	int fd;
 	char str[MAXLINE];

@@ -10,7 +10,7 @@ int main(){
 	int fd,length,i;
 	char message[MAXLINE];
 	sprintf(message,"Hello from PID %d",getpid());
-	length=strlen(message+1);
+	length=strlen(message)+1;
 	do{
 		fd=open("myPipe",O_WRONLY);
 		if(fd==-1)sleep(1);
