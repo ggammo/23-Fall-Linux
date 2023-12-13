@@ -1,0 +1,1 @@
+cmd_/home/ggammo/23-Fall-Linux/Module.symvers := sed 's/\.ko$$/\.o/' /home/ggammo/23-Fall-Linux/modules.order | scripts/mod/modpost -m -a -E -o /home/ggammo/23-Fall-Linux/Module.symvers -e -i Module.symvers   -T -
